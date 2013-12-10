@@ -16,6 +16,46 @@
   100%{ background: black; box-shadow: 0px 0px 0px red; }
 }
 
+
+@-webkit-keyframes lightlight {
+  0%{}
+  50%{-webkit-transform: scale(0.5,0.5)}
+  100%{}
+}
+
+
+@-webkit-keyframes SlideAuto {
+	0% {background:url('http://i.imgur.com/CxHjkMp.png') 0px 0;}
+  
+  19.99% {background:url('http://i.imgur.com/CxHjkMp.png') 0px 0;}
+  
+  
+  20% {background:url('http://i.imgur.com/CxHjkMp.png') 700px 0; margin-top:50px;}
+  
+  39.99% {background:url('http://i.imgur.com/CxHjkMp.png') 700px 0;margin-right:150px;}
+  
+  
+  40% {background:url('http://i.imgur.com/CxHjkMp.png') 0px 0; margin-top:30px;}
+  
+  59.99% {background:url('http://i.imgur.com/CxHjkMp.png') 0px 0; margin-top:52px;}
+  
+  
+  60% {background:url('http://i.imgur.com/CxHjkMp.png') 700px 0;}
+  
+  79.99% {background:url('http://i.imgur.com/CxHjkMp.png') 700px 0; margin-top:50px;}
+  
+  
+  80% {background:url('http://i.imgur.com/CxHjkMp.png') 0px 0;margin-right:0px;}
+  
+  100% {background:url('http://i.imgur.com/CxHjkMp.png') 0px 0; margin-top:0px;}
+}
+
+
+.noneclass{
+
+}
+
+
 #room{
         position:absolute;
         top:0px;
@@ -24,69 +64,159 @@
 
 #ball1{
         position:absolute;
-        top:650px;
-        left:400px;
+        top:810px;
+        left:1180px;
+
+}
+.ball1ani{
        -webkit-animation:moveUp1 1s infinite;
 }
 
+
 #ball2{
         position:absolute;
-        top:600px;
-        left:450px;
-       -webkit-animation:moveUp2 0.5s infinite;
+        top:770px;
+        left:1250px;
 }
+.ball2ani{
+         -webkit-animation:moveUp2 0.5s infinite;
+}
+
 
 #picture{
         position:absolute;
-        top:200px;
-        left:470px;
+        top:180px;
+        left:790px;
+        transition: 0.2s;
+        -webkit-transform-origin:20% 20%
 }
-
-#picture:hover {
-    -webkit-transform-origin:0% 0%;
-    -webkit-transform: rotate(15deg);
+.pictureani{
+        -webkit-transform: rotate(30deg)
 }
 
 #poster{
         position:absolute;
-        top:190px;
-        left:600px;
+        top:150px;
+        left:1070px;
+        transition: 2s;
 }
-
-#poster:hover {
+.posterani{
         -webkit-filter: invert(100%);
 }
 
 #bear{
         position:absolute;
-        top:380px;
-        left:610px;
+        top:460px;
+        left:1115px;
         width:50px;
-        height:60px;
+        height:70px;
         //background: black;
         //opacity: 0.5;
 }
 
 #beareye1{
         position:absolute;
-        top:395px;
-        left:623px;
-        width:5px;
-        height:5px;
+        top:481px;
+        left:1120px;
+        width:7px;
+        height:7px;
         background: black;
-        border-radius: 10px;
+        border-radius: 7px;
 }
 
 #beareye2{
         position:absolute;
-        top:395px;
-        left:637px;
-        width:5px;
-        height:5px;
+        top:481px;
+        left:1144px;
+        width:7px;
+        height:7px;
         background: black;
-        border-radius: 10px;
+        border-radius: 7px;
 }
 
-.beareyes{
+.bearani{
        -webkit-animation:glowEyes 1s infinite;
+}
+
+#baby{
+        position:absolute;
+        top:481px;
+        left:1040px;
+        width:70px;
+        height:50px;
+        //background: black;
+        //opacity: 0.5;
+}
+
+#tree{
+        position:absolute;
+        top:50px;
+        left:0px;
+        width:700;
+        height:700px;
+       -webkit-animation: SlideAuto 5s infinite;
+}
+
+#outside{
+        position:absolute;
+        top:-90px;
+        left:0px;
+  
+}
+
+#curtain{
+        position:absolute;
+        top:-70px;
+        left:0px;
+}
+
+
+
+#light{
+        position:absolute;
+        top:400px;
+        left:1230px;
+        opacity: 0.7;
+       -webkit-animation:lightlight 6s infinite;
+}
+#candle{
+        position:absolute;
+        top:486px;
+        left:1260px;
+}
+#fire{
+        position:absolute;
+        top:475px;
+        left:1320px;
+}
+
+#energe{
+        position:absolute;
+        top:10px;
+        left:1510px;
+}
+
+#blackgage{
+        position:absolute;
+        top:-280px;
+        left:1500px;
+        width:100;
+        height:450px;
+        background: black;
+}
+#redgage{
+        position:absolute;
+        top:80px;
+        left:1530px;
+        width:60;
+        height:100px;
+        background: red;
+}
+#gageback{
+        position:absolute;
+        top:0px;
+        left:1500px;
+        width:400;
+        height:942px;
+        background: black;
 }
